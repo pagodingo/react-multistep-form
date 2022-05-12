@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
 import React, {Component, useState} from 'react'
 import StepOne from "./components/stepOne.js"
 import StepTwo from "./components/stepTwo.js"
@@ -36,3 +37,28 @@ class App extends React.Component {
 }
 export default App;
 //Streaming-Service-MultiStep-Sign-Up-Form
+=======
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+>>>>>>> 0b92ec91140b2a1593c1b3a4cb3e4cbec6098a61

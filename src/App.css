@@ -28,6 +28,7 @@
   color: #61dafb;
 }
 
+<<<<<<< HEAD
 .profile-controls {
   background-color:#282c34;
 }
@@ -47,6 +48,8 @@
   font-weight: 700;
 }
 
+=======
+>>>>>>> 0b92ec91140b2a1593c1b3a4cb3e4cbec6098a61
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
