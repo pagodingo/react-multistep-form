@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.profile-controls {
+  background-color:#282c34;
+}
+
+ input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #888;
+  margin: auto;
+  color: #282c34;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
