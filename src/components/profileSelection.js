@@ -1,26 +1,182 @@
 const profileSelection = () => {
     return (
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item">
-      <img class="d-block w-50" src="https://www.teahub.io/photos/full/274-2743459_snow-cabin-pixel-art.jpg" alt="First slide"/>
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-50" src="https://preview.redd.it/q5l4dwtlc4941.png?width=960&crop=smart&auto=webp&s=f3714e5cca6cfcd0f7cb5d07ac786fa139e57f10" alt="Second slide"/>
-    </div>
-    <div class="carousel-item active">
-      <img class="d-block w-50" src="https://cdn.dribbble.com/users/3567453/screenshots/10005954/media/5e4f13f8494e20e80cf506cb4f515c12.png?compress=1&resize=1200x900&vertical=top" alt="Third slide"/>
+      <div>
+
+<div class="media-container">
+    <div class="media-scroller">
+
+      
+      <div class="media-group" id="1">
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642190672487-22bde32965f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641841344411-49dbd02896f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643223723262-7ce785730cf6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640938776314-4d303f8a1380?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <a class="next" href="#2" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      
+      <div class="media-group" id="2">
+        <a class="previous" href="#1">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641118961077-440391095cdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640767014413-b7d27c58b058?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640948612546-3b9e29c23e98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <a class="next" href="#3" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      
+      <div class="media-group" id="3">
+        <a class="previous" href="#2">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642484865851-111e68695d71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642237778207-24985a0bf876?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642177584449-fa0b017dccc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc5NQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643249960396-d39d2a63ce8a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0Mw&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1641424222187-1c336d21804c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <a class="next" href="#4" aria-label="next">
+          <svg>
+            <use href="#next"></use>
+          </svg>
+        </a>
+      </div>
+
+      
+      <div class="media-group" id="4">
+        <a class="previous" href="#3">
+          <svg>
+            <use href="#previous"></use>
+          </svg>
+        </a>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640998483268-d1faffa789ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODkwNA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1642034451735-2a8df1eaa2c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1640808238224-5520de93c939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg4OQ&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643039952431-38adfa91f320?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <div class="media-element">
+          <img
+            src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODg0OA&ixlib=rb-1.2.1&q=80&w=400"
+            alt=""/>
+        </div>
+        <a class="next" href="#1" aria-label="next">
+            <svg>
+              <use href="#next"></use>
+            </svg>
+        </a>
+      </div>
+
+      <div class="navigation-indicators">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
     </div>
   </div>
-  <a class="carousel-control-prev profile-controls" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next profile-controls" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+
+  <svg>
+    <symbol id="next" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </symbol>
+    <symbol id="previous" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </symbol>
+  </svg>
+      </div>
     )
 }
 
