@@ -1,67 +1,48 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-}
+*, *::before, *::after {box-sizing: border-box; margin: 0;}
 
 body {
     font-family: 'Merriweather';
     font-size: 1.25rem;
     color: white;
     background: #121212;
-    padding: 5%;
 }
 
-img, svg {
-    /*max-width: 100%;*/
-    display: flex;
-}
 img:hover {
-    transform: scale(1.2);
-    transition: 1.5s;
+    border:5px solid white;
+    border-radius: 50%;
 }
 
-.media-container {position: relative;}
-
-.media-scroller, .media-group {
+.media-container {position: relative; margin-top: 8rem; overflow:visible;} .media-scroller, .media-group {
     display: grid;
-    gap: 0.25rem;
+    gap: 1rem;
     grid-auto-flow: column;
-}
-
-.media-scroller {
+}.media-scroller {
     overflow-x: hidden;
     scroll-behavior: smooth;
     grid-auto-columns: 100%;
-}
-.media-scroller:first-of-type {padding-left: 0;}
-
-.media-group {
+}.media-scroller:first-of-type {padding-right: 1rem;} .media-group {
     grid-auto-columns: 1fr;
-    overflow: hidden;
-}
-
-.media-element {
+    overflow:hidden;
+}.media-element {
     position: relative;
     /*border-radius: 0.25rem;*/
-    overflow: hidden;
-}
-.media-element > img {
+    height: auto;
+    overflow:visible;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}.media-element > img {
     width: 100%;
+    margin: 1rem;
     aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
-
-/*:where(.next, .previous):hover {background: rgb(0 0 0 / 0.3);}*/
+    /*object-fit: cover;*/
+    overflow:visible;
+}.media-group:target :where(.next, .previous) {display: flex;}
+:where(.next, .previous):hover > svg {transform: scale(1.2);}
 :where(.next, .previous) > svg {
     transition: transform 75ms linear;
     transform: scale(1);
-}
-
-/*.media-scroller:has(:target:not(:first-child)) .media-group:first-of-type .next {display:none;}*/
-.media-group:first-child :where(.next, .previous) {display: flex;}
-.media-group:target :where(.next, .previous) {display: flex;}
-:where(.next, .previous):hover > svg {transform: scale(1.2);}
+}.media-group:first-child :where(.next, .previous) {display: flex;}
 
 
 .next, .previous {
@@ -90,11 +71,11 @@ img:hover {
 
 .navigation-indicators {
     opacity: 0;
-    position: absolute;
+    position:absolute;
     display: flex;
     gap: 3px;
     top: -1rem;
-    right: 2rem;
+    right: 47vw;
     transition: opacity .25s;
 }.navigation-indicators > * {
     width: 1rem;
@@ -105,13 +86,16 @@ img:hover {
 }
 
 
-
+/* -- -- -- -- -- */
+/*Highlighting Profile Selection Current Page*/
 .media-scroller:hover :where(.next, .previous),
 .media-group:not(:target) ~ .navigation-indicators > *:nth-child(1),
 .media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1),
 .media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2),
 .media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3),
 .media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4),
-.media-scroller:hover .navigation-indicators {opacity: 1;}
+.media-group:nth-child(5):target ~ .navigation-indicators > *:nth-child(5),
 
-.media-group:not(:nth-child(1)):target ~ .navigation-indicators > *:nth-child(1) {opacity: .5;}
+.media-scroller:hover .navigation-indicators {opacity: 1; transition: .5s;}
+
+.media-group:not(:nth-child(1)):target ~ .navigation-indicators > *:nth-child(1) {opacity: .5; transition: 1s;}

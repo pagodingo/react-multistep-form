@@ -41,8 +41,8 @@
   outline: none;
   border: none;
   border-bottom: 1px solid #888;
-  margin: auto;
-  color: #282c34;
+  margin-bottom: 4rem; margin-top: 4rem;
+  color: #ffffff;
   font-size: 7rem;
   font-weight: 700;
 }
