@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: system-ui;
+    font-family: 'Merriweather';
     font-size: 1.25rem;
     color: white;
     background: #121212;
@@ -12,11 +12,13 @@ body {
 }
 
 img, svg {
-    max-width: 100%;
-    display: block;
+    /*max-width: 100%;*/
+    display: flex;
 }
-
-.section-title {margin-block: 4rem 1rem;}
+img:hover {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
 
 .media-container {position: relative;}
 
@@ -30,8 +32,6 @@ img, svg {
     overflow-x: hidden;
     scroll-behavior: smooth;
     grid-auto-columns: 100%;
-    padding: 0 3rem;
-    scroll-padding-inline: 3rem;
 }
 .media-scroller:first-of-type {padding-left: 0;}
 
@@ -42,14 +42,27 @@ img, svg {
 
 .media-element {
     position: relative;
-    border-radius: 0.25rem;
+    /*border-radius: 0.25rem;*/
     overflow: hidden;
 }
 .media-element > img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+
+/*:where(.next, .previous):hover {background: rgb(0 0 0 / 0.3);}*/
+:where(.next, .previous) > svg {
+    transition: transform 75ms linear;
+    transform: scale(1);
+}
+
+/*.media-scroller:has(:target:not(:first-child)) .media-group:first-of-type .next {display:none;}*/
+.media-group:first-child :where(.next, .previous) {display: flex;}
+.media-group:target :where(.next, .previous) {display: flex;}
+:where(.next, .previous):hover > svg {transform: scale(1.2);}
+
 
 .next, .previous {
     display: none;
@@ -73,18 +86,7 @@ img, svg {
     bottom: 0;
 }
 
-.media-group:first-child :where(.next, .previous) {display: flex;}
 
-:where(.next, .previous):hover {background: rgb(0 0 0 / 0.3);}
-:where(.next, .previous) > svg {
-    transition: transform 75ms linear;
-    transform: scale(1);
-}
-:where(.next, .previous):hover > svg {transform: scale(1.2);}
-
-.media-group:target :where(.next, .previous) {display: flex;}
-
-.media-scroller:has(:target:not(:first-child)) .media-group:first-of-type .next {display: none;}
 
 .navigation-indicators {
     opacity: 0;
@@ -94,15 +96,15 @@ img, svg {
     top: -1rem;
     right: 2rem;
     transition: opacity .25s;
-}
-
-.navigation-indicators > * {
+}.navigation-indicators > * {
     width: 1rem;
     height: 2px;
     background: white;
     opacity: 0.5;
     transition-delay: .5s;
 }
+
+
 
 .media-scroller:hover :where(.next, .previous),
 .media-group:not(:target) ~ .navigation-indicators > *:nth-child(1),

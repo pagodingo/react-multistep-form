@@ -1,13 +1,20 @@
+import darth from '../assets/darthvader.png'
+import groot from '../assets/groot.png'
+import mulan from '../assets/mulan.png'
+import blackpanther from '../assets/blackpanther.png'
+import nala from '../assets/nala.png'
+import tony from '../assets/tony.png'
+import rafiki from '../assets/rafiki.png'
+import scar from '../assets/scar.png'
 const profileSelection = () => {
     return (
       <div>
-
 <div class="media-container">
     <div class="media-scroller">
 
-      
-      <div class="media-group" id="1">
-        <div class="media-element">
+      {/*Group */}
+      <div class="media-group animate__animated animate__fadeIn" id="1">
+      <div class="media-element">
           <img
             src="https://images.unsplash.com/photo-1641353989082-9b15fa661805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODcyOA&ixlib=rb-1.2.1&q=80&w=400"
             alt=""/>
@@ -39,7 +46,7 @@ const profileSelection = () => {
         </a>
       </div>
 
-      
+      {/*Group */}
       <div class="media-group" id="2">
         <a class="previous" href="#1">
           <svg>
@@ -48,7 +55,7 @@ const profileSelection = () => {
         </a>
         <div class="media-element">
           <img
-            src="https://images.unsplash.com/photo-1641259041823-e09935369105?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzM5ODc2Mw&ixlib=rb-1.2.1&q=80&w=400"
+            src={darth}
             alt=""/>
         </div>
         <div class="media-element">
@@ -78,7 +85,7 @@ const profileSelection = () => {
         </a>
       </div>
 
-      
+      {/*Group */}
       <div class="media-group" id="3">
         <a class="previous" href="#2">
           <svg>
@@ -118,6 +125,7 @@ const profileSelection = () => {
       </div>
 
       
+      {/*Group */}
       <div class="media-group" id="4">
         <a class="previous" href="#3">
           <svg>
@@ -179,5 +187,4 @@ const profileSelection = () => {
       </div>
     )
 }
-
 export default profileSelection;
