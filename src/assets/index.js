@@ -6,6 +6,7 @@ import dash from "../assets/dash.png"
 import pumba from "../assets/pumba.png"
 import simba from "../assets/simba.png"
 import babyyoda from "../assets/babyyoda.png"
+import dory from "../assets/dory.png"
 /*
 Starwars
 */
@@ -40,7 +41,7 @@ import mushu from "../assets/mushu.png"
 import mulan from "../assets/mulan.png"
 
 const avatars = {
-    kids: {violet:violet, dash:dash, pumba:pumba, simba:simba, babyyoda:babyyoda},
+    kids: {dory:dory, violet:violet, dash:dash, pumba:pumba, simba:simba, babyyoda:babyyoda},
     simpsons: {homer:homer, maggie:maggie, marge:marge, bart:bart, lisa:lisa},
     starWars: {drth:drth, bb8:bb8, kylo:kylo, c3po:c3po,r2d2:r2d2},
     avengers: {tony:tony, peter:peter, tchalla:tchalla,groot:groot,bruce:bruce},

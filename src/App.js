@@ -23,14 +23,42 @@ class App extends React.Component {
     this.setState({step: Math.max(this.state.step - 1,1)})
   }
 
+  setProfile = (profile) => {
+    console.log(profile)
+    this.setState({profile: profile});
+  }
+
+  displayProfile = () => {
+    console.log(this.state);
+  }
+
+  setProfileName = (name) => {
+    this.setState({name: name})
+  }
+
   render() {
     switch(this.state.step){
+     /* case 0:
+        return <ProfilesList />*/
       case 1:
-        return <StepOne next={this.nextStep} prev={this.prevStep}/>
+        return <StepOne 
+          next={this.nextStep} 
+          prev={this.prevStep} 
+          setProfile={this.setProfile} 
+          displayProfile={this.displayProfile}
+          />
       case 2:
-        return <StepTwo next={this.nextStep} prev={this.prevStep}/>
+        return <StepTwo 
+          next={this.nextStep} 
+          prev={this.prevStep}
+          setProfileName={this.setProfileName}
+          displayProfile={this.displayProfile}
+          />
       case 3:
-        return <StepThree next={this.nextStep} prev={this.prevStep}/>
+        return <StepThree 
+          next={this.nextStep} 
+          prev={this.prevStep}
+          />
     }
   }
 }
