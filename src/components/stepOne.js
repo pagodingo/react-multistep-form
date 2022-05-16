@@ -1,6 +1,6 @@
 import "../App.css"
 import ProfileSelection from './profileSelection'
-const stepOne = ({ next, setProfile, displayProfile, profiles }) => {
+const stepOne = ({ setProfile, profiles }) => {
     return (
         <div>
             <div className="tv"></div>
@@ -10,9 +10,7 @@ const stepOne = ({ next, setProfile, displayProfile, profiles }) => {
 
             <div className="flex">
                 <button onClick={profiles}>back to profiles</button>
-                <button onClick={next}>{'>'}</button>
             </div>
-            <button onClick={displayProfile}>log</button>
         </div>
     )
 }

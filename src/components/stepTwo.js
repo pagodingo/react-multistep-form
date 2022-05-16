@@ -1,5 +1,5 @@
 
-const stepTwo = ({ next, prev, inputName }) => {
+const stepTwo = ({ prev, inputName }) => {
     return (
         <div>
             <h2 className="animate__animated animate__fadeIn">What's your profile name?</h2>
@@ -8,7 +8,6 @@ const stepTwo = ({ next, prev, inputName }) => {
             </form>
             <div className="flex">
                 <button onClick={prev}>{'<'}</button>
-                <button onClick={next}>{'>'}</button>
             </div>
         </div>
     )

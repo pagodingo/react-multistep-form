@@ -1,26 +1,26 @@
 import './App.css';
-import React, {Component, useState} from 'react'
+import React from 'react'
 import StepOne from "./components/stepOne.js"
 import StepTwo from "./components/stepTwo.js"
 import StepThree from "./components/stepThree.js"
 import SelectProfile from "./components/selectProfile.js"
 import './styles/profileSelection.css'
+
 class App extends React.Component {
   constructor (){
     super();
     this.state = {
       step: 0,
       name: "",
-      email: "",
       profile: "",
       permissions: ""
     }
   }
 
-  nextStep = () => {
+  /*nextStep = () => {
     this.setState({step: Math.min(this.state.step + 1, 3)})
   }
-
+  */
   prevStep = () => {
     this.setState({step: Math.max(this.state.step - 1,1)})
   }
@@ -35,19 +35,11 @@ class App extends React.Component {
     this.setState({name: e.target.children[0].value, step: 3})
   }
 
-  displayProfile = () => {
-    console.log(localStorage);
-  }
-
-  setProfileName = (name) => {
-    this.setState({name: name})
-  }
-
-  createProfile = () => {
+  createNewProfile = () => {
     this.setState({step: 1})
   }
 
-  profiles = () => {
+  returnSavedProfiles = () => {
     this.setState({step: 0})
   }
 
@@ -56,21 +48,41 @@ class App extends React.Component {
   }
 
   setPermissions = async (permissions) => {
-   await this.setState({permissions: permissions})
-     this.profiles();
-     console.log(this.state)
+    await this.setState({permissions: permissions})
+      if (localStorage.getItem("users") === null){
+        console.log("entered")
+        let users = [];
+        let user = {
+          name: this.state.name,
+          profile: this.state.profile,
+          permissions: this.state.permissions
+        }
+        users.push(user)
+        localStorage.setItem("users", JSON.stringify(users))
+        console.log(localStorage.getItem("users"))
+    } else {
+        let users = JSON.parse(localStorage.getItem("users"))
+        let user = {
+          name: this.state.name,
+          profile: this.state.profile,
+          permissions: this.state.permissions
+        }
+        users.push(user);
+        localStorage.setItem("users",JSON.stringify(users))
+        console.log(localStorage.getItem("users"));
+      }
+      this.setState({step: 0});
   }
 
   render() {
     switch(this.state.step){
       case 0:
-        return <SelectProfile createProfile={this.createProfile}/>
+        return <SelectProfile createNewProfile={this.createNewProfile}/>
       case 1:
         return <StepOne 
           next={this.nextStep} 
-          profiles={this.profiles} 
+          profiles={this.returnSavedProfiles} 
           setProfile={this.setProfile} 
-          displayProfile={this.displayProfile}
         />
           
       case 2:
@@ -79,7 +91,6 @@ class App extends React.Component {
           prev={this.prevStep}
           inputName={this.inputName}
           setProfileName={this.setProfileName}
-          displayProfile={this.displayProfile}
         />
       case 3:
         return <StepThree 

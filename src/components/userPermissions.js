@@ -2,9 +2,9 @@ import ControlArrows from "./controlArrows.js";
 const userPermissions = ({ setPermissions }) => {
   return (
     <div>
-      <div class="media-container">
-        <div class="media-scroller">
-          <div class="media-group animate__animated animate__fadeIn" id="1">
+      <div class="container">
+        <div class="grid">
+          <div class="grid-group animate__animated animate__fadeIn" id="1">
             <button
               onClick={() => setPermissions('general')}
               class="permissions animate__fadeInLeft animate__animated"

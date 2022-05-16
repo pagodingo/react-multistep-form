@@ -26,6 +26,10 @@ h2 {
   margin-top: 2rem;margin-left: 4vw;
 }
 
+p {
+  text-align: center;
+}
+
  input {
   background: transparent; outline: none; border: none;
   margin: 4rem;
