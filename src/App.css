@@ -1,11 +1,12 @@
 *, *::before, *::after {box-sizing: border-box; margin: 0;}
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: white;
-  background: linear-gradient(to left, #1993b8, #0067C5);
+  /*background: linear-gradient(to left, #1993b8, #0067C5);*/
+  background: linear-gradient(to left, #010507, #070f16);
 } 
 
 button, input[type="submit"], input[type="reset"] {
@@ -18,27 +19,23 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-h1 {
-  margin: 4rem;
+h2 {
+  margin-top: 2rem;margin-left: 4vw;
 }
 
  input {
-  position: relative;
-  display: box;
-  box-sizing: border-box;
-  width: 100vw;
   background: transparent; outline: none; border: none;
-  max-width: 90%;
-  border-bottom: 1px solid #ffffff;
   margin: 4rem;
-  color: #ffffff;
-  font-size: 7rem;
+  margin-top: 15rem; margin-bottom: 9.5rem;
+  border-bottom: 1px solid #ffffff;
+  box-sizing: border-box;
+  position: relative;
+  color: #ffffffdd;
   font-weight: 700;
-}
-
-input::placeholder {
-  color:white;
-  opacity: 25%;
+  font-size: 7rem;
+  max-width: 91%;
+  display: box;
+  width: 100vw;
 }
 
 .flex {

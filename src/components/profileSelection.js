@@ -2,44 +2,46 @@ import avatars from "../assets/index.js"
 import ControlArrows from "./controlArrows.js"
 const profileSelection = ({ setProfile }) => {
   return (
-    <div className="profiles">
+    <div>
       <div class="media-container">
         <div class="media-scroller">
 
-          {/* Character Group */}
+          {/* Kids */}
           <div class="media-group animate__animated animate__fadeIn" id="1">
           <a class="previous" href="#5">
               <svg>
                 <use href="#previous"></use>
               </svg>
             </a>
-            <button onClick={ e => setProfile(e.target.getAttribute("src"))} class="media-element animate__bounce animate__animated">
-              <img
-                src={avatars.lionKing.nala}
-                alt=""
-              />
-            </button>
-            <div class="media-element animate__bounce animate__animated">
-              <img
-                src={avatars.kids.simba}
-                alt=""
-              />
-            </div>
-            <div class="media-element animate__bounce animate__animated">
+            <div class="media-element animate__fadeInTopLeft animate__animated">
               <img
                 src={avatars.kids.dash}
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
                 alt=""
               />
             </div>
-            <div class="media-element animate__bounce animate__animated">
+            <div class="media-element animate__fadeInUp animate__animated">
               <img
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
                 src={avatars.kids.violet}
                 alt=""
               />
             </div>
-            <div class="media-element animate__bounce animate__animated">
+            <div class="media-element animate__fadeInDown animate__animated">
               <img
                 src={avatars.kids.dory}
+                alt=""
+              />
+            </div>
+            <div class="media-element animate__fadeInUp animate__animated">
+              <img
+                src={avatars.avengers.groot}
+                alt=""
+              />
+            </div>
+            <div class="media-element animate__fadeInTopRight animate__animated">
+              <img
+                src={avatars.lionKing.nala}
                 alt=""
               />
             </div>
@@ -50,7 +52,8 @@ const profileSelection = ({ setProfile }) => {
             </a>
           </div>
 
-          {/* Character Group */}
+
+          {/* StarWars */}
           <div class="media-group" id="2">
             <a class="previous" href="#1">
               <svg>
@@ -91,7 +94,7 @@ const profileSelection = ({ setProfile }) => {
             </a>
           </div>
 
-          {/* Character Group */}
+          {/* Simpsons */}
           <div class="media-group" id="3">
             <a class="previous" href="#2">
               <svg>
@@ -133,7 +136,7 @@ const profileSelection = ({ setProfile }) => {
             </a>
           </div>
 
-          {/* Character Group */}
+          {/*  Avengers */}
           <div class="media-group" id="4">
             <a class="previous" href="#3">
               <svg>
@@ -177,7 +180,7 @@ const profileSelection = ({ setProfile }) => {
             </a>
           </div>
 
-          {/* Character Group */}
+          {/* Lion King & Mulan */}
           <div class="media-group animate__animated animate__fadeIn" id="5">
           <a class="previous" href="#4">
               <svg>

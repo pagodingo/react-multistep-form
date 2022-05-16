@@ -1,13 +1,16 @@
-const stepThree = ({ next, prev }) => {
+import UserPermissions from "./userPermissions"
+import "../styles/colorSelection.css"
+const stepThree = ({ saveProfile, prev }) => {
     return (
         <div>
-            {/*<h1 className="animate__animated animate__fadeIn">Select your color scheme</h1>*/}
+            <h2 className="animate__animated animate__fadeIn">User Permissions</h2>
+            <UserPermissions />
             <div className="flex">
-                <button onClick={prev}>prev</button>
-                <button onClick={next}>next</button>
+            <button onClick={prev}>{'<'}</button>
+                <button onClick={saveProfile}>save profile</button>
             </div>
         </div>
     )
 }
 
-export default stepThree
+export default stepThree;

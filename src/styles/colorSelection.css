@@ -1,6 +1,4 @@
-/*
-Profile Selection
-*/
+
 
 .media-container {
     box-shadow: 0px 1px 5px inset rgb(4, 6, 20), 0px -1px 1px inset rgb(4, 6, 20);
@@ -15,7 +13,9 @@ Profile Selection
 }.media-group {
     grid-auto-columns: auto;
     grid-auto-columns: 1fr;
+    justify-content: center;
 }.media-element {
+    justify-self: center;
     border-radius: 50%;
     width: 20vw;
     aspect-ratio: 1/1;
@@ -27,11 +27,10 @@ Image Animations
 
 img {
     border-radius: +50%;
-    /*box-shadow: 0 0 .5px .5px #030916;*/
     opacity: .7;
     transition: 2s;
     width: 20vw;
-    padding: 20%;
+    padding: 10%;
 }img:hover, media-element:hover {
     box-shadow: 0 0 .5px .5px inset #5985dd2d;
     transform:scale(1.5);
@@ -73,12 +72,5 @@ Next, Previous | Arrows
 }.media-group:first-child :where(.next, .previous) {display: flex;}
 
 /* -- -- -- -- -- */
-/*Highlighting Indicators*/
-.media-scroller:hover :where(.next, .previous),
-.media-group:not(:target) ~ .navigation-indicators > *:nth-child(1),
-.media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1),
-.media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2),
-.media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3),
-.media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4),
-.media-group:nth-child(5):target ~ .navigation-indicators > *:nth-child(5),
-.media-scroller:hover .navigation-indicators {opacity: 1; transition: .5s ease-in-out;}
+/* profile scrolling arrows*/
+.media-scroller:hover {opacity: 1; transition: .5s ease-in-out;}
