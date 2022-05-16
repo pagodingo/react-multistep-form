@@ -1,13 +1,14 @@
 import UserPermissions from "./userPermissions"
-import "../styles/colorSelection.css"
-const stepThree = ({ saveProfile, prev }) => {
+import "../styles/userPermissions.css"
+import React from "react";
+const stepThree = ({ cancel, prev, setPermissions }) => {
     return (
         <div>
             <h2 className="animate__animated animate__fadeIn">User Permissions</h2>
-            <UserPermissions />
+            <UserPermissions setPermissions={setPermissions} />
             <div className="flex">
             <button onClick={prev}>{'<'}</button>
-                <button onClick={saveProfile}>save profile</button>
+                <button onClick={cancel}>cancel</button>
             </div>
         </div>
     )

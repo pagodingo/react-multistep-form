@@ -12,7 +12,8 @@ class App extends React.Component {
       step: 0,
       name: "",
       email: "",
-      profile: ""
+      profile: "",
+      permissions: ""
     }
   }
 
@@ -26,7 +27,12 @@ class App extends React.Component {
 
   setProfile = (profile) => {
     console.log(profile)
-    this.setState({profile: profile});
+    this.setState({profile: profile, step: 2});
+  }
+
+  inputName = (e) => {
+    e.preventDefault();
+    this.setState({name: e.target.children[0].value, step: 3})
   }
 
   displayProfile = () => {
@@ -46,7 +52,13 @@ class App extends React.Component {
   }
 
   saveProfile = () => {
-    
+    console.log(this.state);
+  }
+
+  setPermissions = async (permissions) => {
+   await this.setState({permissions: permissions})
+     this.profiles();
+     console.log(this.state)
   }
 
   render() {
@@ -65,6 +77,7 @@ class App extends React.Component {
         return <StepTwo 
           next={this.nextStep} 
           prev={this.prevStep}
+          inputName={this.inputName}
           setProfileName={this.setProfileName}
           displayProfile={this.displayProfile}
         />
@@ -72,7 +85,8 @@ class App extends React.Component {
         return <StepThree 
           next={this.nextStep} 
           prev={this.prevStep}
-          saveProfile={this.profiles}
+          setPermissions={this.setPermissions}
+          cancel={this.profiles}
         />
     }
   }

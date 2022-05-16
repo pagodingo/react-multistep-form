@@ -65,20 +65,12 @@ Next, Previous | Arrows
     bottom: 0;
 }
 
-.media-group:target :where(.next, .previous) {display: flex;}
-:where(.next, .previous):hover > svg {transform: scale(1.2);}
-:where(.next, .previous) > svg {
-    transition: transform 75ms linear;
-    transform: scale(1);
-}.media-group:first-child :where(.next, .previous) {display: flex;}
 
-/* -- -- -- -- -- */
+:where(.next, .previous):hover > svg {transform: scale(1.2); filter: invert(20%) sepia(17%) saturate(1430%) hue-rotate(332deg) brightness(104%) contrast(98%);}
+:where(.next, .previous) > svg {transition: transform 75ms linear;transform: scale(1);}
+.media-group:first-child :where(.next, .previous) {display: flex;}
+.media-group:target :where(.next, .previous) {display: flex;}
+
 /*Highlighting Indicators*/
 .media-scroller:hover :where(.next, .previous),
-.media-group:not(:target) ~ .navigation-indicators > *:nth-child(1),
-.media-group:nth-child(1):target ~ .navigation-indicators > *:nth-child(1),
-.media-group:nth-child(2):target ~ .navigation-indicators > *:nth-child(2),
-.media-group:nth-child(3):target ~ .navigation-indicators > *:nth-child(3),
-.media-group:nth-child(4):target ~ .navigation-indicators > *:nth-child(4),
-.media-group:nth-child(5):target ~ .navigation-indicators > *:nth-child(5),
 .media-scroller:hover .navigation-indicators {opacity: 1; transition: .5s ease-in-out;}

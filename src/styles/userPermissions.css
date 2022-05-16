@@ -1,0 +1,15 @@
+.media-container {
+    box-shadow: 0px 1px 5px inset rgb(4, 6, 20), 0px -1px 1px inset rgb(4, 6, 20);
+    position: relative; 
+    margin-top: 5%; 
+}.media-scroller, .media-group {
+    display: grid; grid-auto-flow: column;
+}.media-group {
+    grid-auto-columns: auto;
+    justify-content: center;
+}.permissions {
+    justify-self: center;
+    border-radius: 50%;
+    width: 20vw;
+    aspect-ratio: 1/1;
+}

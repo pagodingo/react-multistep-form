@@ -5,7 +5,6 @@ body {
   font-size: 1.25rem;
   font-weight: 500;
   color: white;
-  /*background: linear-gradient(to left, #1993b8, #0067C5);*/
   background: linear-gradient(to left, #010507, #070f16);
 } 
 
@@ -17,6 +16,10 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+
+button:hover {
+  color: #FCBC76;
 }
 
 h2 {
