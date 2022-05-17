@@ -57,7 +57,7 @@ class App extends React.Component {
 
     for (var i = 0; i < users.length; ++i){
 
-      if (users[i].name == name){
+      if (users[i].name === name){
         users.splice(i,1)
       }
     }
