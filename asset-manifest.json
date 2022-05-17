@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/react-multistep-form/static/css/main.268bae7f.css",
+    "main.js": "/react-multistep-form/static/js/main.8eb1629a.js",
+    "static/media/homer.png": "/react-multistep-form/static/media/homer.864d5a01dfc96b8c32f2.png",
+    "static/media/maggie.png": "/react-multistep-form/static/media/maggie.b5f958af452e6ac54aba.png",
+    "static/media/lisa.png": "/react-multistep-form/static/media/lisa.7913866f86d64dbb0311.png",
+    "static/media/dory.png": "/react-multistep-form/static/media/dory.101d2cfa7642edc5bf79.png",
+    "static/media/babyyoda.png": "/react-multistep-form/static/media/babyyoda.686f921614885477fcaa.png",
+    "static/media/simba.png": "/react-multistep-form/static/media/simba.4494f262062c9c8d94b9.png",
+    "static/media/bart.png": "/react-multistep-form/static/media/bart.6f89f8b181b4a708a974.png",
+    "static/media/bruce.png": "/react-multistep-form/static/media/bruce.d4acf33552145a3cd8ff.png",
+    "static/media/marge.png": "/react-multistep-form/static/media/marge.f2e58e81f0e8bc1f8d90.png",
+    "static/media/peter.png": "/react-multistep-form/static/media/peter.3add3a29cec8efdf1354.png",
+    "static/media/bb-8.png": "/react-multistep-form/static/media/bb-8.de608271ebd30692cb16.png",
+    "static/media/c3po.png": "/react-multistep-form/static/media/c3po.73470f9ac1b17994de11.png",
+    "static/media/r2d2.png": "/react-multistep-form/static/media/r2d2.505887a4c8ef9d2cc236.png",
+    "static/media/groot.png": "/react-multistep-form/static/media/groot.edf1bfe0e317c8e52a78.png",
+    "static/media/tony.png": "/react-multistep-form/static/media/tony.7e0f9f1e525b50e7066f.png",
+    "static/media/mushu.png": "/react-multistep-form/static/media/mushu.8bc2a8d3c5b75394560f.png",
+    "static/media/blackpanther.png": "/react-multistep-form/static/media/blackpanther.d8fecd9eeb0038817253.png",
+    "static/media/mulan.png": "/react-multistep-form/static/media/mulan.0dbc825bb244d5aca368.png",
+    "static/media/scar.png": "/react-multistep-form/static/media/scar.505fd34b4b039dd72e8f.png",
+    "static/media/rafiki.png": "/react-multistep-form/static/media/rafiki.c7e8bc45b26a23ca5619.png",
+    "static/media/pumba.png": "/react-multistep-form/static/media/pumba.64ad9571101c22b0eb9c.png",
+    "static/media/nala.png": "/react-multistep-form/static/media/nala.30e1f27fc562a61e729e.png",
+    "static/media/kyloren.png": "/react-multistep-form/static/media/kyloren.52a924b5acaf80bc2fdb.png",
+    "static/media/darthvader.png": "/react-multistep-form/static/media/darthvader.c123da55bea1ca4d1cb0.png",
+    "static/media/dash.png": "/react-multistep-form/static/media/dash.6faf0cb9b022fd8e8aca.png",
+    "static/media/violet.png": "/react-multistep-form/static/media/violet.df547556932f12e8433c.png",
+    "index.html": "/react-multistep-form/index.html",
+    "main.268bae7f.css.map": "/react-multistep-form/static/css/main.268bae7f.css.map",
+    "main.8eb1629a.js.map": "/react-multistep-form/static/js/main.8eb1629a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.268bae7f.css",
+    "static/js/main.8eb1629a.js"
+  ]
+}
