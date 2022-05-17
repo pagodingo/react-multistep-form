@@ -37,7 +37,9 @@ class App extends React.Component {
 
   createNewProfile = () => {
     let users = JSON.parse(localStorage.getItem("users"))
-
+    if (users === null) {
+      this.setState({step: 1});
+    }
     if (users.length === 3){
       return window.alert("Profile limit reached - Please delete a profile to create a new one.")
     }
