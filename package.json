@@ -1,6 +1,5 @@
 {
   "name": "nbc",
-  "homepage": "https://pagodingo.github.io/react-multistep-form/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
