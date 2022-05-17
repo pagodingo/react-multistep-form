@@ -31,18 +31,21 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.kids.dory}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element animate__fadeInUp animate__animated">
               <img
                 src={avatars.avengers.groot}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element animate__fadeInTopRight animate__animated">
               <img
                 src={avatars.lionKing.nala}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <a class="next" href="#2" aria-label="next">
@@ -61,30 +64,38 @@ const profileSelection = ({ setProfile }) => {
               </svg>
             </a>
             <div class="media-element">
-              <img src={avatars.starWars.bb8} alt="" />
+              <img 
+              src={avatars.starWars.bb8}
+              alt="" 
+              onClick={ e => setProfile(e.target.getAttribute("src"))}
+              />
             </div>
             <div class="media-element">
               <img
                 src={avatars.starWars.c3po}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.starWars.r2d2}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.starWars.kylo}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.starWars.drth}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <a class="next" href="#3" aria-label="next">
@@ -105,22 +116,26 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.simpsons.homer}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.simpsons.lisa}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.simpsons.bart}
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.simpsons.marge}
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
@@ -147,12 +162,14 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.avengers.bruce}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.avengers.tony}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
@@ -165,12 +182,14 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.avengers.tchalla}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.avengers.peter}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <a class="next" href="#5" aria-label="next">
@@ -191,30 +210,35 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.lionKing.scar}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.kids.pumba}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.lionKing.rafiki}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.lionKing.mulan}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
               <img
                 src={avatars.lionKing.mushu}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <a class="next" href="#1" aria-label="next">

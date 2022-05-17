@@ -36,6 +36,11 @@ class App extends React.Component {
   }
 
   createNewProfile = () => {
+    let users = JSON.parse(localStorage.getItem("users"))
+
+    if (users.length === 3){
+      return window.alert("Profile limit reached - Please delete a profile to create a new one.")
+    }
     this.setState({step: 1})
   }
 
@@ -45,6 +50,20 @@ class App extends React.Component {
 
   saveProfile = () => {
     console.log(this.state);
+  }
+
+  deleteProfile = (name) => {
+    let users = JSON.parse(localStorage.getItem("users"));
+
+    for (var i = 0; i < users.length; ++i){
+
+      if (users[i].name == name){
+        users.splice(i,1)
+      }
+    }
+
+    localStorage.setItem("users",JSON.stringify(users))
+    window.location.reload();
   }
 
   setPermissions = async (permissions) => {
@@ -77,7 +96,10 @@ class App extends React.Component {
   render() {
     switch(this.state.step){
       case 0:
-        return <SelectProfile createNewProfile={this.createNewProfile}/>
+        return <SelectProfile 
+          deleteProfile={this.deleteProfile} 
+          createNewProfile={this.createNewProfile}
+        />
       case 1:
         return <StepOne 
           next={this.nextStep} 
