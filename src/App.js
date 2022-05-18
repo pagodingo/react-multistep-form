@@ -121,7 +121,7 @@ class App extends React.Component {
           next={this.nextStep} 
           prev={this.prevStep}
           setPermissions={this.setPermissions}
-          cancel={this.profiles}
+          cancel={this.returnSavedProfiles}
         />
     }
   }
