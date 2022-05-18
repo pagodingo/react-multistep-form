@@ -176,6 +176,7 @@ const profileSelection = ({ setProfile }) => {
               <img
                 src={avatars.avengers.groot}
                 alt=""
+                onClick={ e => setProfile(e.target.getAttribute("src"))}
               />
             </div>
             <div class="media-element">
