@@ -41,7 +41,7 @@ class App extends React.Component {
       this.setState({step: 1});
     }
     if (users.length === 3){
-      return window.alert("Max Profile Limit: 3")
+      return window.alert("Profile Limit: 3")
     }
     this.setState({step: 1})
   }
