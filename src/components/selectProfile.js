@@ -10,9 +10,9 @@ const selectProfile = ({createNewProfile, deleteProfile}) => {
                     {users.map(user => {
                     return <div className="media-element">
                         <img src={user.profile}></img>
-                        <h6>{user.permissions}</h6>
+                        {/*<h6 style={{textDecoration: "underlined"}}>{user.permissions}</h6>*/}
                         <h3>{user.name}</h3>
-                        <h6 style={{color: "#3A3B3C", marginBottom: "2vh"}}><button onClick={() => deleteProfile(user.name)}>[delete proifle]</button></h6>
+                        <h6 style={{color: "#3A3B3C", marginBottom: "2vh"}}><button onClick={() => deleteProfile(user.name)}>[ delete proifle ]</button></h6>
                         </div>
                 })}
                 <button onClick={createNewProfile} className="new-profile" >+ new profile</button>

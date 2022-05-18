@@ -17,10 +17,6 @@ class App extends React.Component {
     }
   }
 
-  /*nextStep = () => {
-    this.setState({step: Math.min(this.state.step + 1, 3)})
-  }
-  */
   prevStep = () => {
     this.setState({step: Math.max(this.state.step - 1,1)})
   }
@@ -127,5 +123,3 @@ class App extends React.Component {
   }
 }
 export default App;
-
-//Streaming Multi-step Profile Creation
