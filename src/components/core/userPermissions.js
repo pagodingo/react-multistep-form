@@ -1,4 +1,3 @@
-import ControlArrows from "./controlArrows.js";
 const userPermissions = ({ setPermissions }) => {
   return (
     <div>

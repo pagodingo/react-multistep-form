@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react'
-import StepOne from "./components/stepOne.js"
-import StepTwo from "./components/stepTwo.js"
-import StepThree from "./components/stepThree.js"
-import SelectProfile from "./components/selectProfile.js"
+import StepOne from "./components/steps/stepOne.js"
+import StepTwo from "./components/steps/stepTwo.js"
+import StepThree from "./components/steps/stepThree.js"
+import SelectProfile from "./components/core/selectProfile.js"
 import './styles/profileSelection.css'
 
 class App extends React.Component {
@@ -53,12 +53,11 @@ class App extends React.Component {
   deleteProfile = (name) => {
     let users = JSON.parse(localStorage.getItem("users"));
 
-    for (var i = 0; i < users.length; ++i){
-
-      if (users[i].name === name){
-        users.splice(i,1)
+    users.forEach((user, index) => {
+      if (user.name === name){
+        users.splice(index,1)
       }
-    }
+    })
 
     localStorage.setItem("users",JSON.stringify(users))
     window.location.reload();
@@ -66,29 +65,25 @@ class App extends React.Component {
 
   setPermissions = async (permissions) => {
     await this.setState({permissions: permissions})
+      let user = {
+        name: this.state.name,
+        profile: this.state.profile,
+        permissions: this.state.permissions
+      }
       if (localStorage.getItem("users") === null){
         console.log("entered")
         let users = [];
-        let user = {
-          name: this.state.name,
-          profile: this.state.profile,
-          permissions: this.state.permissions
-        }
+
         users.push(user)
         localStorage.setItem("users", JSON.stringify(users))
         console.log(localStorage.getItem("users"))
-    } else {
+        return
+    }
         let users = JSON.parse(localStorage.getItem("users"))
-        let user = {
-          name: this.state.name,
-          profile: this.state.profile,
-          permissions: this.state.permissions
-        }
+
         users.push(user);
         localStorage.setItem("users",JSON.stringify(users))
-        console.log(localStorage.getItem("users"));
-      }
-      this.setState({step: 0});
+        this.setState({step: 0});
   }
 
   render() {

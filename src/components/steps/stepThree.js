@@ -1,6 +1,7 @@
-import UserPermissions from "./userPermissions"
-import "../styles/userPermissions.css"
+import UserPermissions from "../core/userPermissions"
+import "../../styles/userPermissions.css"
 import React from "react";
+
 const stepThree = ({ cancel, prev, setPermissions }) => {
     return (
         <div>

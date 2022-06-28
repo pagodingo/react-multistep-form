@@ -1,5 +1,5 @@
-import avatars from "../assets/index.js"
-import ControlArrows from "./controlArrows.js"
+import avatars from "../../assets/index.js"
+import ControlArrows from "../core/controlArrows.js"
 const profileSelection = ({ setProfile }) => {
   return (
     <div>
