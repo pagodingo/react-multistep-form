@@ -1,6 +1,6 @@
 # React Multistep Form (without libraries)
 
-An example of how implement a multistep form in react without libraries
+An example of how to implement a multistep form in react without libraries
 
 Each `step` in the form is its own `Component`
 
