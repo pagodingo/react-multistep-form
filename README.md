@@ -26,7 +26,7 @@ class App extends React.Component
 ```
 Methods move the form back & forth like toggles.
 ```js
-this.nexStep() // ++ step
+this.nextStep() // ++ step
 this.prevStep() // -- step
 ```
 
