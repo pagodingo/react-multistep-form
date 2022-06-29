@@ -1,28 +1,67 @@
-In the project directory, you can run:
+# React Multistep Form (without libraries)
 
-### `npm start`
+An example of how implement a multistep form in react without libraries
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Each `step` in the form is it's own `Component`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+My ['Profile Creator' implementation ](https://link-url-here.org) required some helper components, those components can be found in `/core`.
 
-### `npm test`
+Helpers aside, all steps are in `/steps`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Moving from one step to another
 
-### `npm run build`
+In main `App.js`, the current step is stored in state:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+class App extends React.Component 
+{
+    constructor()
+    {
+        super();
+        this.state = {
+            step: 0
+        }
+    }
+}
+```
+Methods move the form back & forth like toggles.
+```js
+this.nexStep() // ++ step
+this.prevStep() // -- step
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`<Step />`'s are passed them, and then hooked up to `onClicks`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+When clicked, they shift this switch statement: 
+```js
+  render() {
+    switch(this.state.step){
+      case 0:
+        return <SelectProfile 
+          deleteProfile={this.deleteProfile} 
+          createNewProfile={this.createNewProfile}
+        />
+      case 1:
+        return <StepOne 
+          next={this.nextStep} 
+          profiles={this.returnSavedProfiles} 
+          setProfile={this.setProfile} 
+        />
+          
+      case 2:
+        return <StepTwo 
+          next={this.nextStep} 
+          prev={this.prevStep}
+          inputName={this.inputName}
+          setProfileName={this.setProfileName}
+        />
+      case 3:
+        return <StepThree 
+          next={this.nextStep} 
+          prev={this.prevStep}
+          setPermissions={this.setPermissions}
+          cancel={this.returnSavedProfiles}
+        />
+    }
+  }
+```
