@@ -24,7 +24,9 @@ class App extends React.Component
     }
 }
 ```
+
 Methods move the form back & forth like toggles.
+
 ```js
 this.nextStep() // ++ step
 this.prevStep() // -- step
@@ -32,7 +34,8 @@ this.prevStep() // -- step
 
 `<Step />`'s are passed them, and then hooked up to `onClicks()`.
 
-When clicked, they shift this switch statement: 
+When clicked, they shift this switch statement:
+
 ```js
   render() {
     switch(this.state.step){
