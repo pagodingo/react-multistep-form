@@ -37,6 +37,7 @@ this.prevStep() // -- step
 When clicked, they shift this switch statement:
 
 ```js
+// App.js
   render() {
     switch(this.state.step){
       case 0:
