@@ -6,7 +6,7 @@ Each `step` in the form is its own `Component`
 
 My <a href="https://whimsical-salamander-7e72fa.netlify.app/">profile creator implementation</a> required some helper components, those components can be found in `/core`.
 
-Helpers aside, all steps are in `/steps`.
+Helpers aside - all components are in `/steps`.
 
 ## Moving from one step to another
 
