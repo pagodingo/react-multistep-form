@@ -32,7 +32,7 @@ this.nextStep() // ++ step
 this.prevStep() // -- step
 ```
 
-`<Step />`'s are passed them, and then hooked up to `onClicks()`.
+`Steps` are passed them, and then hooked up to `onClicks()`.
 
 When clicked, they shift this switch statement:
 
