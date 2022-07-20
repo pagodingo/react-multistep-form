@@ -4,7 +4,7 @@ An example of how to implement a multistep form in react without libraries
 
 Each `step` in the form is its own `Component`
 
-My <a href="https://whimsical-salamander-7e72fa.netlify.app/">profile creator implementation</a> required some helper components, those components can be found in `/core`.
+My <a href="https://whimsical-salamander-7e72fa.netlify.app/" target="_blank">profile creator implementation</a> required some helper components, those components can be found in `/core`.
 
 Helpers aside - all components are in `/steps`.
 
