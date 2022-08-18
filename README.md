@@ -1,5 +1,7 @@
 # React Multistep Form (without libraries)
 
+<img src="https://admiring-pike-75c4b2.netlify.app/assets/profile-creation-preview.133c552a31dc0b26537bb05ea031a797.png" alt="react-multistep--preview" />
+
 An example of how to implement a multistep form in react without libraries
 
 Each `step` in the form is its own `Component`
