@@ -8,6 +8,11 @@ body {
   background: linear-gradient(to left, #010507, #070f16);
 } 
 
+svg {
+  width: 40px;
+  aspect-ratio: 1;
+}
+
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;

@@ -250,8 +250,7 @@ const profileSelection = ({ setProfile }) => {
           </div>
         </div>
       </div>
-
-      <ControlArrows/>
+<ControlArrows />
     </div>
   );
 };
