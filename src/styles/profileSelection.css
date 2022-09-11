@@ -3,8 +3,8 @@ Profile Selection
 */
 
 .media-container {
-    border-top: 75px solid rgba(183, 144, 210, 0.028);
-    border-bottom: 75px solid rgba(183, 144, 210, 0.028);
+    border-top: 25px solid rgba(111, 83, 131, 0.084);
+    border-bottom: 25px solid rgba(111, 83, 131, 0.084);
     box-shadow: 0px 1px 5px inset rgb(4, 6, 20), 0px -1px 1px inset rgb(4, 6, 20);
     position: relative; 
     margin-top: 5%; 
