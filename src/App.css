@@ -75,3 +75,6 @@ h3 {
   aspect-ratio: 1;
   border: 1px solid #dddddd;
 }
+
+.new-profile:hover {
+	border 1px solid #fa9120;
