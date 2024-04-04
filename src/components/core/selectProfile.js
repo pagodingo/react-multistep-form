@@ -17,7 +17,7 @@ const selectProfile = ({ createNewProfile, deleteProfile }) => {
                   <h3>{user.name}</h3>
                   <h6 style={{ color: "#3A3B3C", marginBottom: "2vh" }}>
                     <button onClick={() => deleteProfile(user.name)}>
-                      [ delete proifle ]
+                      [ delete profile ]
                     </button>
                   </h6>
                 </div>
